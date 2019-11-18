@@ -1,0 +1,10 @@
+import numpy as np
+print("Problem No.1 -NORMALIZATION")
+X = np.random.random((5,5))
+SIGMA = X.std()
+print("Standard Deviation: ", SIGMA)
+X_2 = X.mean()
+print ("Mean: ", X_2)
+Z = (X - X_2)/SIGMA
+print ("NORMALIZED X: ")
+print(Z)
